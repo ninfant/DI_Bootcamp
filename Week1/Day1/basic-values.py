@@ -19,6 +19,7 @@
 
 # #len() length of the string  
 # print(len('Harry Potter'))
+
 # print(name [4:len(name)])
 
 
@@ -34,14 +35,18 @@
 # print(my_name2.title())
 # print(my_name2.lower())
 
+# -------- #
 
-# my_hp_name=my_name2.replace('Infante', 'Lopez') # replace() aqui remplaza el primero '' por el segunfo ''
-# print(my_hp_name)
+my_hp_name=my_name2.replace('Infante', 'Lopez') # replace() aqui remplaza el primero '' por el segunfo ''
+print(my_hp_name)
 
+# -------- #
 
-# user='!Jhon Doe'
-# cleaned_user_name=user.strip('!') # strip() to remove a character for my string
-# print(cleaned_user_name)
+user='!Jhon Doe'
+cleaned_user_name=user.strip('!') #strip() to remove a character for my string
+print(cleaned_user_name)
+
+# --------
 
 # ----Numbers----
 # print(3 + 4)

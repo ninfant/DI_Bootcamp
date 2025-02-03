@@ -1,0 +1,18 @@
+string: objects of text wrapped with double or simple quotation marks
+integers: whole numbers objects (no decimals) 
+floats:Decimal Numbers objects 
+boleans: values true or false
+
+
+string method: string.upper(), capitalize()
+
+integers, floats: > ir <, == !=
+
+booleans: and or 
+
+
+functions: len(), input()
+
+
+strings are not mutable: this mean i can not do this 
+number[3]=55   not ok, this can only be done in lists

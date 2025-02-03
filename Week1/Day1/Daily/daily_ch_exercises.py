@@ -17,7 +17,7 @@ import random
 # print(userstring[0])
 # print(userstring[9])
 
-# #ex3
+#ex3
 # user_string = "HelloWorld"
 # output = "" 
 # for i in user_string:

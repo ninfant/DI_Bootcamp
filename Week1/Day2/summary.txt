@@ -1,0 +1,8 @@
+Data structure
+-lists: ordered, mutable
+-Tuples: ordered, no mutable, more than 2 elements
+-sets: unordered, mutable, no duplicates
+
+Loops
+-for Loops: iterables (sequences), range(), enumered()
+- while loops: counter (i), while True
