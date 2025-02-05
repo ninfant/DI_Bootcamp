@@ -72,7 +72,7 @@
 # else:
 #     print('this key doesn\'t exists')
 
-# for relative in user_info['family']:
+# for relative in user_info['family']:   ## un forrrrrrr
 #     print(relative)
 
 # Exercise
@@ -111,10 +111,10 @@ student_info = {
 # print(student_info.items())
 
 
-# for key, value in student_info.items():
-#     if key == 'age':
-#         student_info['age'] += 5
-#     print(key, value)
+for key, value in student_info.items():
+    if key == 'age':
+        student_info['age'] += 5
+    print(key, value)
 
 # print(student_info)
 
