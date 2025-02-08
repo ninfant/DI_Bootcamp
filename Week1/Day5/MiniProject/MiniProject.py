@@ -1,5 +1,5 @@
 
-# def display_board(dict): 
+# def display_board(board): 
 #     matrix_frame = '***************'
 #     matrix_separator = '* ---|---|--- *'
 #     print(matrix_frame)
