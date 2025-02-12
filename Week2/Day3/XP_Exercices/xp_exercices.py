@@ -112,24 +112,24 @@
 # # ex5 
 # # Create a function that displays the amount of time left from now until January 1st.
 # # (Example: the 1st of January is in 10 days and 10:34:01hours).
-# from datetime import datetime
+from datetime import datetime
 
 
-# def time_until_2026():
-#     current_date = datetime.now()
-#     future_date = datetime(2026, 1, 1)
-#     time_until = future_date - current_date  # version classic
+def time_until_2026():
+    current_date = datetime.now()
+    future_date = datetime(2026, 1, 1)
+    time_until = future_date - current_date  # version classic
 
-#     # parsed version
-#     days = time_until.days
-#     seconds = time_until.seconds
-#     hours, remainder = divmod(seconds, 3600)
-#     minutes, seconds = divmod(remainder, 60)
+    # parsed version
+    days = time_until.days
+    seconds = time_until.seconds
+    hours, remainder = divmod(seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
 
-#     return f"The 1st of January is in {days} days and {hours:02}:{minutes:02}:{seconds:02} hours"
+    return f"The 1st of January is in {days} days and {hours:02}:{minutes:02}:{seconds:02} hours"
 
 
-# print(time_until_2026())
+print(time_until_2026())
 
 # # #ex6 Birthday and minutes
 # # Create a function that accepts a birthdate as an argument (in the format of your choice), 
