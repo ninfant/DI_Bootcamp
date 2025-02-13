@@ -29,15 +29,12 @@
 #     def most_common_word(self):
 #         if not self.words:
 #             raise ValueError("The text is empty. No words to analyze.")
-
 #         word_counts = {}
-
 #         for word in self.words:
 #             if word in word_counts:
 #                 word_counts[word] += 1
 #             else:
 #                 word_counts[word] = 1
-
 #         most_common = None
 #         max_count = 0
 
