@@ -46,7 +46,7 @@
 -- WHERE first_name = 'George' OR first_name = 'Matt' 
 -- ORDER BY number_oscars;
 
-SELECT * FROM actors
+-- SELECT * FROM actors
 
 -- UPDATE actors
 -- SET first_name = 'Roni',
