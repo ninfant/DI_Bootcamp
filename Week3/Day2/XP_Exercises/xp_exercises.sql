@@ -90,7 +90,7 @@
 -- ORDER BY payment.payment_id ASC, customer.customer_id ASC
 
 -- You need to check your inventory. Write a query to get all the movies which are not in inventory.
--- SELECT film.film_id, film.title
+-- SELECT film.film_id, film.title, inventory.film_id
 -- FROM film
 -- LEFT JOIN inventory ON film.film_id = inventory.film_id
 -- WHERE inventory.film_id IS NULL;
