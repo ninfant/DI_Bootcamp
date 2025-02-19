@@ -38,7 +38,7 @@
 -- SELECT COUNT(*) AS not_logged_in_customers
 -- FROM Customer c
 -- LEFT JOIN Customer_Profile cp ON c.id = cp.customer_id
--- WHERE cp.isLoggedIn = FALSE OR cp.isLoggedIn IS NULL
+-- WHERE cp.isLoggedIn = FALSE
 
 
 
@@ -87,8 +87,8 @@
 -- The pair of Foreign Keys is the Primary Key of the Junction Table
 
 -- CREATE TABLE Library (
--- book_fk_id INT,
--- student_fk_id INT,
+-- book_fk_id INTIGER,
+-- student_fk_id INTIGER,
 -- borrowed_date DATE NOT NULL,
 -- PRIMARY KEY (book_fk_id, student_fk_id),
 -- FOREIGN KEY (book_fk_id) REFERENCES Book(book_id) ON DELETE CASCADE ON UPDATE CASCADE,
