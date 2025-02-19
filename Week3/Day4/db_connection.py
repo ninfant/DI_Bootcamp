@@ -5,8 +5,8 @@ import random
 
 
 connection =psycopg2.connect(database='countries',
-                              user='noi',
-                             password='noinoi86*',
+                              user='blaa',
+                             password='blaa',
                              host='localhost',
                              port='5432')
 
