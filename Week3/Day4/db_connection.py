@@ -25,8 +25,6 @@ cursor.execute('''CREATE TABLE random_countries
 countries_api = requests.get('https://restcountries.com/v3.1/all')
 data = countries_api.json()
 
-# print(data[1])
-
 for i in range(10):
     index = random.randint(1,100)
     name = data[index]['name']['official']
