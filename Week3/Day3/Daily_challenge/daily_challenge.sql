@@ -28,12 +28,20 @@
 
 
 -- The first_name of the LoggedIn customers
--- All the customers first_name and isLoggedIn columns - even the customers those who don’t have a profile.
 -- The number of customers that are not LoggedIn
+
 -- SELECT c.first_name
 -- FROM Customer c
 -- JOIN Customer_Profile cp ON c.customer_id = cp.customer_id
 -- WHERE cp.isLoggedIn = TRUE
+
+-- SELECT COUNT(*) AS not_logged_in_customers
+-- FROM Customer c
+-- LEFT JOIN Customer_Profile cp ON c.id = cp.customer_id
+-- WHERE cp.isLoggedIn = FALSE OR cp.isLoggedIn IS NULL
+
+
+
 
 
 -- Create a table named Book, with the columns : book_id SERIAL PRIMARY KEY, title NOT NULL, author NOT NULL
