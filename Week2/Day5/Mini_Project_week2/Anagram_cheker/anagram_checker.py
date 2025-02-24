@@ -26,45 +26,45 @@
 # # # this is a valid English word.
 # # # Anagrams for your word: mate, tame, team.
 
-# class AnagramChecker():
+class AnagramChecker():
     
-#     def __init__(self, words_file):
-#         """Loads the text file into a variable."""
-#         self.word_list=[]
-#         try:
-#             with open(words_file, 'r', encoding='utf-8') as file:
-#              self.word_list = file.read().lower().splitlines()
-#         except FileNotFoundError:
-#             print(f"Error: The file '{words_file}' was not found.")
-#         except Exception as e:
-#             print(f"An error occurred while loading the word list: {e}")
+    def __init__(self, words_file):
+        """Loads the text file into a variable."""
+        self.word_list=[]
+        try:
+            with open(words_file, 'r', encoding='utf-8') as file:
+             self.word_list = file.read().lower().splitlines()
+        except FileNotFoundError:
+            print(f"Error: The file '{words_file}' was not found.")
+        except Exception as e:
+            print(f"An error occurred while loading the word list: {e}")
     
-#     def is_anagram(self, word1, word2):
-#         if sorted(word1.lower())==sorted(word2.lower()):
-#             return True
-#         else:
-#             return False 
+    def is_anagram(self, word1, word2):
+        if sorted(word1.lower())==sorted(word2.lower()):
+            return True
+        else:
+            return False 
     
-#     def get_anagrams(self, word):
-#         anagrams_given_word_list =[]
-#         try:
-#                 if word.lower() not in self.word_list:
-#                     raise ValueError (f"'{word}' is not in the word list.")
-#                 for new_anagram in self.word_list:
-#                      if self.is_anagram(word, new_anagram) and word.lower() != new_anagram.lower():
-#                         anagrams_given_word_list.append(new_anagram)
-#         except ValueError as e:
-#             print(e)    
-#         return anagrams_given_word_list
+    def get_anagrams(self, word):
+        anagrams_given_word_list =[]
+        try:
+                if word.lower() not in self.word_list:
+                    raise ValueError (f"'{word}' is not in the word list.")
+                for new_anagram in self.word_list:
+                     if self.is_anagram(word, new_anagram) and word.lower() != new_anagram.lower():
+                        anagrams_given_word_list.append(new_anagram)
+        except ValueError as e:
+            print(e)    
+        return anagrams_given_word_list
 
 
 
 
 
-# # checker = AnagramChecker("sowpods.txt")
+checker = AnagramChecker("sowpods.txt")
 
-# # # print(checker.word_list)
+print(checker.word_list)
 
-# # # print(checker.is_anagram('silent', 'listen'))
+print(checker.is_anagram('silent', 'listen'))
 
-# # # print(checker.get_anagrams('listen'))
+print(checker.get_anagrams('listen'))
