@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Challenge: Create a solar system</title>
+    <style>
+      body {
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .planet {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+        font-weight: bold;
+        position: relative;
+        border: 2px solid white;
+      }
+
+      /* Moon styling with circular orbit */
+      .moon {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgb(237, 237, 237);
+        border: 3px solid red;
+      }
+      .listPlanets {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px; /* Spacing between planets */
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="listPlanets"></section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
