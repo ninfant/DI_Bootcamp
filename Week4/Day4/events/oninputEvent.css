@@ -1,0 +1,17 @@
+/* On Change */
+#result1{
+  border : 2px solid blue;
+  padding: 3px
+}
+
+
+
+/* On Input */
+#result2{
+  border : 2px solid red;
+  padding: 3px
+}
+
+
+
+
