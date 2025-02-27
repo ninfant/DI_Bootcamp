@@ -23,24 +23,24 @@ const solarSystem = [
 ];
 
 // Select the section where planets will be added
-const section = document.querySelector(".listPlanets");
+const section = document.querySelector(".listPlanets")
 
 // Loop through the planets array and create divs
 solarSystem.forEach((planet) => {
-  const planetDiv = document.createElement("div");
-  planetDiv.classList.add("planet");
-  planetDiv.style.backgroundColor = planet.color;
-  planetDiv.textContent = planet.name;
+  const planetDiv = document.createElement("div")
+  planetDiv.classList.add("planet")
+  planetDiv.style.backgroundColor = planet.color
+  planetDiv.textContent = planet.name
 
   // Add moons to the planet
   planet.moons.forEach((moon, index) => {
-    const moonDiv = document.createElement("div");
-    moonDiv.classList.add("moon");
+    const moonDiv = document.createElement("div")
+    moonDiv.classList.add("moon")
     moonDiv.style.transform = `rotate(${
       index * (360 / planet.moons.length)
     }deg) translate(70px)`; // Position the moons around the planet
-    planetDiv.appendChild(moonDiv);
-  });
+    planetDiv.appendChild(moonDiv)
+  })
 
-  section.appendChild(planetDiv);
-});
+  section.appendChild(planetDiv)
+})
