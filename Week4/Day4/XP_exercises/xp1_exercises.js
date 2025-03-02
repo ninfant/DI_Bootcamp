@@ -17,7 +17,6 @@
 
 //     h2Element.addEventListener("click", changeBackgroundColor)
 
-
 //         function changeBackgroundColor() {
 //     h2Element.style.backgroundColor = "red"
 // }
@@ -86,7 +85,7 @@
 // const form = document.querySelector("form")
 // const usersAnswer = document.querySelector(".usersAnswer")
 
-// form.addEventListener("submit", afterSubmit) 
+// form.addEventListener("submit", afterSubmit) // (event, callback function) Callbacks are useful when you need to execute code after something else happens
   // prevent the default form submission behavior (page reload)
 //   function afterSubmit(event)
     // {

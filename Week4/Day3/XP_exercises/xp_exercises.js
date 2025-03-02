@@ -156,7 +156,7 @@
 
 // function planeRideCost() {
 //   let destination;
-//   // to ask the user for their destination until a valid string is entered
+  // to ask the user for their destination until a valid string is entered
 //   while (true) {
 //     destination = prompt("What is your destination?")
 //     if (destination !== null && destination.trim() !== "" && isNaN(destination)) {
@@ -165,7 +165,7 @@
 //     }
 //     alert("Please enter a valid destination.")
 //   }
-//   // to determine the plane ride cost based on the destination
+  // to determine the plane ride cost based on the destination
 //   if (destination.toLowerCase() === "london") {
 //     return 183
 //   } else if (destination.toLowerCase() === "paris") {
@@ -225,27 +225,27 @@
 //   ul.classList.add("student_list")
 // })
 
-// // Add the classes university and attendance to the first <ul>.
-// // document.querySelector(".list") selects only the first <ul>.
+// Add the classes university and attendance to the first <ul>.
+// document.querySelector(".list") selects only the first <ul>.
 // document.querySelector(".list").classList.add("university", "attendance");
 
-// // Add a “light blue” background color and some padding to the <div>.
+// Add a “light blue” background color and some padding to the <div>.
 // container.style.backgroundColor = "lightblue";
 // container.style.padding = "10px";
 
-// // Do not display the <li> that contains the text node “Dan”. (the last <li> of the first <ul>)
-// // Error: Dan is the last child of the second <ul>
+// Do not display the <li> that contains the text node “Dan”. (the last <li> of the first <ul>)
+// Error: Dan is the last child of the second <ul>
 // document.querySelectorAll(".list li").forEach((li) => {
 //   if (li.textContent.trim() === "Dan") {
 //     li.style.display = "none";
 //   }
 // });
 
-// // Add a border to the <li> that contains the text node “Richard”. (the second <li> of the <ul>)
-// // Error: Richard is the second child of the first <ul>
+// Add a border to the <li> that contains the text node “Richard”. (the second <li> of the <ul>)
+// Error: Richard is the second child of the first <ul>
 // document.querySelector(".list li:last-child").style.border = "2px solid black";
 
-// // Change the font size of the whole body
+// Change the font size of the whole body
 // document.body.style.fontSize = "18px";
 
 //________________________________________________________________________________
@@ -261,7 +261,7 @@
 // select the unordered list (<ul>) within the updated div
 // const ulElement = divElement.querySelector("ul")
 
-// areate a new <li> element
+// create a new <li> element
 // const newLi = document.createElement("li")
 
 // create a new text node with the content "Logout"
