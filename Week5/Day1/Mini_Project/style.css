@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgray;
+}
+
+#palette {
+    display: flex;
+    flex-wrap: wrap;
+    width: 19vw;
+    height: 100vh;
+    padding: 10px;
+    align-content: flex-start;
+}
+
+#canvas {
+    display: grid;
+    grid-template-columns: repeat(60, 1fr);  /* 1fr significa "una fracción" del espacio total disponible.*/
+    grid-template-rows: repeat(40, 1fr);
+    width: 81vw;
+    height: 100vh;
+    background-color: white;
+}
