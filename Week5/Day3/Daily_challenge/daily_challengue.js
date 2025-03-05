@@ -44,7 +44,7 @@ const gameInfo = [
 // const userNames = []
 // gameInfo.forEach( value =>{ 
 //     if (value.score > 5)
-//     userNames.push(`${value.username}!`)
+//     userNames.push(value.username)
 // })
 // console.log(userNames)
 
