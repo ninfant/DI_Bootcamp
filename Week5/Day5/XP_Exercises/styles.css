@@ -1,0 +1,13 @@
+label {
+    display: block;
+    margin-bottom: 2px; /* to reduce the space between the h3 and the input */
+    font-family:'Times New Roman', Times, serif
+
+}
+button {
+    display: block; /* this makes the button take the full line and move down */
+    margin-top: 10px; /* this to adds space above the button */
+}
+#name {
+    margin-bottom: 20px;
+}
