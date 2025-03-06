@@ -1,0 +1,90 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #a243ce;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b05090;
+}
+
+/* task list container */
+.listTasks {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+.task {     /* task item */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+.task label {
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 2px;
+}
+
+
+.delete-btn:hover {         /* change delete button color on hover */
+    color: darkred;
+}
+
+
+.fa-xmark {             /* Font Awesome "X" icon */
+    font-size: 16px;
+}
+
+/* when task is completed, text is crossed out */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
