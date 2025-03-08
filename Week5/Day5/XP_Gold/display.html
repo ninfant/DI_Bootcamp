@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Display</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Submitted Data</h2>
+    <section id="outputSection"></section>
+
+    <script>
+        // Obtener los datos desde localStorage
+        let data = localStorage.getItem('formData');
+
+        if (data) {
+            let parsedData = JSON.parse(data);
+            document.getElementById('outputSection').innerHTML = `
+                <p><strong>Name:</strong> ${parsedData.name}</p>
+                <p><strong>Last Name:</strong> ${parsedData.lastname}</p>
+            `;
+        } else {
+            document.getElementById('outputSection').innerHTML = "<p>No data found.</p>";
+        }
+    </script>
+
+</body>
+</html>
