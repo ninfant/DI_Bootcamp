@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+header{
+        margin: 0;
+        padding: 0;
+        display:flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content:flex-start;
+        align-items: center;
+        height: 15vh;
+        background-color: rgb(161, 86, 231);
+        overflow: hidden; /* Evita que los elementos sobresalgan */
+        position: relative;
+        border:2px solid darkgray
+
+}
+
+.title {   /* clase para el texto the ROBOT del header */
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 30px; 
+    color: #000;
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 5px; /* Espaciado entre letras */
+    text-shadow: 3px 3px 0px #66c2bd, 6px 6px 0px #6d0472; /* Sombra tipo neón */
+    margin-left: 10px;
+}
+
+#img-robot-header{ 
+    width: 140px; 
+    margin-left: 50px;
+    margin-bottom: 8px;
+    height: auto;
+    max-height: 110%; /* No deja que salga del header */
+    object-fit:fill;
+}
+#img-robot-header {
+  transition: transform 0.3s;
+}
+#img-robot-header:hover {
+  transform: scale(1.10); /* zoom */
+}
+#name{
+     margin-left: 35px;
+     border-radius: 4px;
+     width: 550px;
+     height: 27px;
+     border: 2px solid darkgray;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative;/* Para que los hijos se posicionen relativos a este contenedor */
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100vw;
+    min-height: 100px;
+    background-color: darkgray;
+    overflow: hidden;
+    border: 1px solid rgb(106, 106, 144) ;
+    background-image: url('img/circuit-pattern.png');  /* la imagen de fondo */
+    background-position: center;  /* Centra la imagen */
+
+    
+}
+#cards {
+  position: relative;
+  z-index: 2; /* Las tarjetas quedan por encima de la imagen */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 70vw;
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente */
+
+}
+.card {
+  background-color: #66c2bd;   
+  width: 200px;   
+  height: 250px;     
+  border-radius: 10px;      
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;          /* Centra el texto e imagen dentro */
+  padding: 20px;               /* Espacio interno */
+  display: flex;
+  flex-direction: column;      /* Imagen, título y texto en COLUMNA */
+  align-items: center;         /* Centra horizontalmente el contenido */
+  margin: 10px;
+}
+
+.card-img {
+  width: 120px;                 
+  height: auto;
+  object-fit: cover;           /* Asegura que la imagen mantenga proporciones */
+  border-radius: 50%;          /* Circular */
+  margin-bottom: 10px;
+  background-color: dimgrey;
+}
+.card h2 {
+  margin: 10px 0 3px 0;
+  font-size: 1.0rem;
+  color: #ffffff;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #f1f1f1;
+}
+.no-results-message { /* clase para cuando no aparece ningun robot mostrar el mensaje */
+font-size: 1.5rem;
+color: rgb(90, 4, 125);
+justify-content:start;
+align-items: center; /* Centra verticalmente */
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-bottom: auto;
+
+}
