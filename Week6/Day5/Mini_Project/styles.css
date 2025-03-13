@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+#myContainer {
+    background-image: url('spaceq.jpg');
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgray;
+    overflow: hidden;
+    position: relative;
+    gap: 10px;
+}
+
+#randomDataContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    border: 3px solid rgb(0, 89, 255);
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    margin: 0 auto; /* Centra el div correctamente */
+    position: relative;
+}
+
+
+#mybtn {
+    display: block;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 40px; 
+    border: 3px solid rgb(0, 89, 255);
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    bottom: 20px;
+}
+
+
+h1{
+display: flex;
+justify-content: space-around;
+font-weight: bold;
+color: white;
+}
+
+p {
+display: flex;
+justify-content: space-around;
+margin: 5px;
+color: white;
+}
+.title {   /* clase para el texto the STAR WARS */
+
+    font-family: 'Press Start 2P', cursive; 
+    font-size: 50px; 
+    color: #000;
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 5px; /* Espaciado entre letras */
+    text-shadow: 3px 3px 0px #c2bc66, 6px 6px 0px #047229; /* Sombra tipo neón */
+    position: relative;
+}
+
+
+#loadingContainer {
+    display: none; /* Oculto por defecto */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+}
+
+/* Animación del spinner */
+.loader {
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid rgb(0, 229, 255); 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 10px auto;
+    position: relative;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
