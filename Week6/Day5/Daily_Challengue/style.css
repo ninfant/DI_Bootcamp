@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+#FullContainer {
+  background-image: url("https://blog.caixabank.es/blogcaixabank/wp-content/uploads/sites/4/2022/07/Historia_de_los_billetes-1.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: darkgray;
+  overflow: hidden;
+}
+
+#ConverterContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  max-width: 450px;
+  border: 3px solid #052e5a;
+  border-radius: 15px;
+  width: 450px;
+  height: 350px;
+  margin: 0 auto; /* Centra el div correctamente */
+  margin-top: 10px;
+}
+h1 {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  color: #052e5a;
+}
+
+#mybtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  color: #052e5a;
+}
+
+#result {
+  font-size: large;
+  margin-bottom: 20px;
+}
+#switchBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
