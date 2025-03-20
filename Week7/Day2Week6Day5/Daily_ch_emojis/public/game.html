@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Guessing Game</title>
+    <script src="game.js" async defer></script>
+  </head>
+  <body>
+    <h2>Guess the Emoji</h2>
+
+    <!-- Input para el nombre del jugador -->
+    <div>
+      <label for="playerName">Your Name:</label>
+      <input type="text" id="playerName" placeholder="Enter your name" />
+    </div>
+
+    <!-- to obtain a new emoji -->
+    <button onClick="getEmojisToPlay()">Get New Emoji</button>
+
+    <!-- the options answers will be shown -->
+    <div id="root"></div>
+
+    <!-- the current score -->
+    <h3>Score: <span id="score">0</span></h3>
+
+    <!--leaderboard -->
+    <h3>Leaderboard</h3>
+    <ul id="leaderboard"></ul>
+  </body>
+</html>
