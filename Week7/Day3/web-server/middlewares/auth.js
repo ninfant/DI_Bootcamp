@@ -1,13 +1,13 @@
-const auth = () => (req, res, next) => {
-  const { admin } = req.query;
+// const auth = () => (req, res, next) => {
+//   const { admin } = req.query;
 
-  if (admin === "john") {
-    next();
-  } else {
-    res.status(401).json({ message: "user not authorized" });
-  }
-};
+//   if (admin === "john") {
+//     next();
+//   } else {
+//     res.status(401).json({ message: "user not authorized" });
+//   }
+// };
 
-module.exports = {
-  auth,
-};
+// module.exports = {
+//   auth,
+// };

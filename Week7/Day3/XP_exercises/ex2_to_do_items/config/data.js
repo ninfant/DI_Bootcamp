@@ -1,1 +1,3 @@
-export const todos = [];
+const todos = [];
+
+export default todos;
