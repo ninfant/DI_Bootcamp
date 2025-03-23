@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "firstname": "lala",
+    "lastname": "foro",
+    "email": "anja@gmail.com",
+    "password": "$2b$10$eSIRPH0fXWHuSqMBFCC/jOgE2ixWAFx69enKNQYdBx4NOPDbezdoO",
+    "username": "noii"
+  },
+  {
+    "id": 2,
+    "firstname": "lopez",
+    "lastname": "anjs",
+    "email": "casa@gmail.com",
+    "password": "$2b$10$ntLrAQ3pjtn/sCtwblEFV.sgr7f.rhjfj8wKKGkhL5mYYMQXWl/i6",
+    "username": "nilda"
+  },
+  {
+    "id": 3,
+    "firstname": "josea",
+    "lastname": "anjs",
+    "email": "b@gmail.com",
+    "password": "$2b$10$06ai7yE6DdEuMFgUtNIN/.rPW3ZC4dgxPixXuxAHlYsObDdHAZSyu",
+    "username": "jose"
+  },
+  {
+    "id": 4,
+    "email": "fake@gmail.com",
+    "password": "$2b$10$L2BM2i06473IVpXFK/GP9eeUKHcfnbJhnEypG6c5BcImlUo9NMTWS",
+    "username": "ninfante"
+  },
+  {
+    "id": 5,
+    "firstname": "josea1",
+    "lastname": "anjs1",
+    "email": "b@gmail1.com",
+    "username": "jose1",
+    "password": "$2b$10$UQ5/BFCNNuZ5XCVs3cA1wua65ArwibqMJArDGmEKXRQsEteSB03aa"
+  },
+  {
+    "id": 6,
+    "email": "fakea@gmail.com",
+    "username": "ninfantes",
+    "password": "$2b$10$7hbGDam/3u1p7WA3F1aLEOgSBbOu/.iKbMGLH1IoRCWHqhCT62jY2"
+  },
+  {
+    "id": 7,
+    "firstname": "aaa",
+    "lastname": "addd",
+    "email": "fake12@gmail.com",
+    "username": "ninfante2",
+    "password": "$2b$10$XJsgAaDyElQCk1zujxrzousVMEOnm45uIajDW/a7SXrYt7.b6lDa2"
+  }
+]
