@@ -30,10 +30,10 @@ function App() {
     <>
       <Users />
       {/* <CounterClass /> */}
-      {/* <Counter /> */}
-      {/* <h2>{title}</h2>
+      <Counter />
+      <h2>{title}</h2>
       <input onChange={(e) => setInput(e.target.value)} />
-      <button onClick={changeTitle}>Change Title!</button> */}
+      <button onClick={changeTitle}>Change Title!</button>
     </>
   );
 }
