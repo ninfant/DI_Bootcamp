@@ -11,6 +11,7 @@ import Example1 from "./components/Example1";
 import Example2 from "./components/Example2";
 import Example3 from "./components/Example3";
 import data from "./file.json";
+import Post from "./components/Post";
 function App() {
   return (
     <>
@@ -61,6 +62,7 @@ function App() {
         <Example3 experienceData={data.Experiences} />
       </div>
       <h1>-----------------</h1>
+      <Post />
     </>
   );
 }
