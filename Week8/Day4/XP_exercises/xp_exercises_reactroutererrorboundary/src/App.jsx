@@ -15,7 +15,7 @@ import Post from "./components/Post";
 function App() {
   return (
     <>
-      <h1>-----------------</h1>
+      <hr />
       <Header />
       <Routes>
         <Route
@@ -44,12 +44,12 @@ function App() {
         />
       </Routes>
       <br />
-      <h1>-----------------</h1>
+      <hr />
       <div>
         <PostList />
       </div>
       <br />
-      <h1>-----------------</h1>
+      <hr />
       <div>
         <Example1 socialMediaData={data.SocialMedias} />
       </div>
@@ -57,11 +57,11 @@ function App() {
       <div>
         <Example2 skillsData={data.Skills} />
       </div>
-      <h1>-----------------</h1>
+      <hr />
       <div>
         <Example3 experienceData={data.Experiences} />
       </div>
-      <h1>-----------------</h1>
+      <hr />
       <Post />
     </>
   );
