@@ -1,0 +1,3 @@
+Este es un server de node que esta cargando de la 
+base de datos de Neon y es sobre productos y la va a estar usando el ejercicio
+que q esta en esta mismo Day4 sobre react 

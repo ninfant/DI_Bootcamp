@@ -10,7 +10,7 @@ function App() {
   ]);
 
   const increaseVotes = (index) => {
-    const updatedLanguages = [...languages];
+    const updatedLanguages = [...languages];// hay q hacer una copia para q react sepa que ha cambiado ya sea arreglo u objeto 
     updatedLanguages[index].votes += 1;
     setLanguages(updatedLanguages);
   };
