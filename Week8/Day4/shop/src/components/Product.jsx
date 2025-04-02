@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router";
+import { useParams, Link } from "react-router-dom";
 
 const BASE_URL = import.meta.env.VITE_APP_BASE_URL;
 
@@ -25,7 +25,7 @@ const Product = () => {
     <>
       <h2>Product: {product?.name}</h2>
       <h3>Price: {product?.price}</h3>
-      <Link to='/'>Continue Shoping</Link>
+      <Link to="/">Continue Shoping</Link>
     </>
   );
 };

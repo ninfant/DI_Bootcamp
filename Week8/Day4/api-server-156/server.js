@@ -12,5 +12,6 @@ app.listen(PORT, () => {
 
 /** body-parser */
 app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // querystring is true and false is qs
 
 app.use("/products", productRouter);
