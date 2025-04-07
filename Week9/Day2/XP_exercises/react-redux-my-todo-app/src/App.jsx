@@ -23,9 +23,9 @@ function App() {
       <input
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Nueva tarea"
+        placeholder="New task"
       />
-      <button onClick={handleAdd}>Agregar</button>
+      <button onClick={handleAdd}>Add</button>
 
       <ul>
         {todos.map((todo) => (
