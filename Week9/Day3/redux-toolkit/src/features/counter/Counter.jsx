@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { increment, decrement, reset, incrementByVal } from "./counterSlice";
 import { useRef } from "react";
 const Counter = () => {
-  const count = useSelector((state) => state.counterReducer.count);
+  const count = useSelector((state) => state.counterReducer.count); // aqui count es el nombre del arreglo
   const dispatch = useDispatch();
 
   const valRef = useRef();
@@ -16,7 +16,11 @@ const Counter = () => {
       <button onClick={() => dispatch(reset())}> reset </button>
       <div>
         <input ref={valRef} />
-        <button onClick={() => dispatch(incrementByVal({val1: valRef.current.value}))}>
+        <button
+          onClick={() =>
+            dispatch(incrementByVal({ val1: valRef.current.value }))
+          }
+        >
           Increment by Input value
         </button>
       </div>
